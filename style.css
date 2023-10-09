@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+
+}
+input[type="radio"]:checked {
+   width:17px;
+   height: 17px;
+}
+input:focus{
+    background-color: silver;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+}
+img{
+    display:none;
+
+}
+p{
+    display:none;
+}
+input:hover ~ p{
+    display:inline;
+    background-color: red;
+    font-family: monospace;
+}
+input[type="email"]:focus:valid~img.valid{
+    display:inline;
+    width:15px;
+    height: 15px;
+    
+}
+input[type="email"]:focus:invalid~img.invalid{
+    display:inline;
+    width:15px;
+    height: 15px;
+    
+}
+input[type="submit"]{
+    margin: 20px;
+    margin-left: 0px;
+}
+
+
+
