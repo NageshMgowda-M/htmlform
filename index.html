@@ -1,0 +1,84 @@
+<!Doctype html>
+<head>
+    <title>nagesh</title>
+    <link rel="stylesheet"  href="style.css" >
+</head>
+
+<body>
+
+ <form > 
+    <fieldset> 
+        <legend>personal details</legend>
+    <table>
+        <tr><td><label> first name:</label></td><td><input type="text" name="fn" size="25" placeholder="Ex:Nagesh" maxlength="20" required pattern="[A-Za-z]{3,7}">
+        <p>Enter the first name</p></td> </tr>
+
+        <tr><td><label for="sur"> sur name:</label></td><td><input type="text" name="su" size="25" id="sur" placeholder="Ex:Nagesh" maxlength="20">
+            <p>Enter the sur name</p></td> </tr>
+
+       <tr><td><label>mobile number:</label></td> <td><input type="number" name="nu" size="25"  placeholder="Ex:9243100100" maxlength="20" reqiured >
+         <p>Enter the mobile number</p></td></tr>
+       <tr><td><label>age:</label></td> <td><input type="number" name="age" size="25" min="18" placeholder="Ex:18" max="100"> 
+         <p>Enter the age</p></td></tr>
+
+       <tr><td><label>E-mail:</label></td><td><input type="email" name="em" size="25"  placeholder="Ex:nagesh@email.com" maxlength="45" required>
+        <p class="para">Enter the E-mail</p>             <img class="valid" src="valid.jpeg" alt="pic not found"> 
+        <img class="invalid" src="invalid.jpeg" alt="pic not found"></td></tr>
+
+
+         
+       <tr><td><label>password:</label></td><td><input type="password" name="pw" size="25" placeholder="Min 5 Characters" maxlength="20"> <p>Enter the password</p></td></tr>
+        <tr><td><label> confirm password:</label></td><td><input type="password" name="cpw" size="25"  placeholder="Min 5 Characters" maxlength="15" min="4" max="10s"> <p>Confirm your password</td></tr>
+        <tr><td><label>DOB:</label></td><td><input type="date" name="d" > <p>Enter the date</p></td></tr>
+
+        <tr><td><label>gender:</label></td>
+            <td> 
+            <input type="radio"  name="rd" value="m" checked>
+              <label>Male</label>
+            <input type="radio"  name="rd" value="f">
+            <label>Female</label>
+            <input type="radio"  name="rd" value="ot">
+            <label>Others</label></td> </tr> 
+
+        <tr><td><label>country</label></td>
+            <td><select> 
+            <option value="india"> Bharath </option>
+            <option value="a"> America </option>
+            <option value="japan"> Japan </option>
+            <option value="ko"> Korea </option>
+            <option value="ru"> Russia </option>
+        </select></td></tr>
+            
+        <tr><td><label>upload picture</label></td><td><input type="file"  name="fl" ></td> </tr>
+</table>
+</fieldset>
+<br>
+<input type="reset">
+</form>
+
+<form action="login.html"> 
+ <fieldset> 
+  <legend>course details</legend>
+      
+        <table>    
+       <tr><td><label> course</label></td>
+        <td><select>
+        <option value="j"> JAVA</option>
+        <option value="s"> SQL</option>
+        <option value="jv">Java Script </option>
+        <option value="ht">HTML </option>
+        <option value="css">CSS </option>
+        </select></td></tr> 
+
+        <tr><td><label>Delivary mode</label></td><td><input type="checkbox" name="m1" value="on"> ONLINE
+            <input type="checkbox" name="m1" value="off"> OFFLINE</td></tr>
+            
+            <tr><td><label>comments</label></td><td><textarea rows="4" cols="40" maxlength="100" placeholder="Comment here" ></textarea></td></tr>
+        
+        </table> 
+    
+    </fieldset> <br>
+    <input type="reset"> <br>
+    <input type="submit">
+</form>
+</body>
